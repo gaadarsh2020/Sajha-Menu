@@ -1,0 +1,10 @@
+.App {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+:root {
+  --sajha-menu: linear-gradient(116deg, #ffba53 0%, #fc8211 100%);
+}

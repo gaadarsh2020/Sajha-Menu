@@ -1,0 +1,34 @@
+.new-section {
+  max-width: 100%;
+  height: 100vh;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  /* background-color: #fc8211; */
+  align-items: center;
+  /* background-color: #fc8211; */
+}
+.left-side h1 {
+  padding-left: 25px;
+}
+.left-side img {
+  padding-top: 50px;
+}
+
+.span-class {
+  background: -webkit-linear-gradient(#ffba53, #fc8211);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 5px;
+}
+
+.right-side {
+  line-height: 3.5rem;
+}
+.right-side ul li {
+  list-style: none;
+}
+.icon {
+  margin: 10px;
+}

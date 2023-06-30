@@ -1,0 +1,74 @@
+.footer_container {
+  width: 100%;
+  background-color: #070707;
+  color: white;
+  margin-top: 50px;
+}
+
+.footer_main {
+  padding: 5rem 0;
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 2rem;
+}
+.about_section {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.products_section {
+  padding-left: 30px;
+  grid-column: span 3;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.products_content {
+  width: 50%;
+}
+.products_list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+}
+.contact_section {
+  grid-column: span 3;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact_list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact_list li {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.social_section {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.social_list {
+  display: flex;
+  gap: 1rem;
+}
+.social_list li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.container {
+  text-align: center;
+  padding-bottom: 30px;
+}

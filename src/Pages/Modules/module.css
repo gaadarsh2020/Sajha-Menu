@@ -1,0 +1,202 @@
+section {
+  width: 100%;
+  height: auto;
+}
+
+.Hero-container {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fdf4e5;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+}
+
+.hero-content h1 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--dark, #070707);
+  font-size: 64px;
+  font-weight: 900;
+
+  line-height: 105.7%;
+}
+.hero-content p {
+  display: flex;
+  width: 674px;
+  height: 73px;
+  flex-direction: column;
+  color: #232323;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+button {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  background: var(--dark, #070707);
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+/* .hero-image {
+  position: relative;
+} */
+
+.hero-image-2 img {
+  /* width: 500px;
+  height: auto; */
+  position: absolute;
+}
+.image1 {
+  width: auto;
+  height: auto;
+  top: 0px;
+  right: 50px;
+}
+.image2 {
+  top: 200px;
+  right: 5px;
+}
+
+/* .image1 {
+  width: auto;
+  height: auto;
+} */
+.frame {
+  /* background-color: #fdf4e5; */
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 150px;
+}
+.frame12 {
+  /* background-color: #fdf4e5; */
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+.step1 {
+  width: 90%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.other-modules {
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 2rem;
+  margin-top: 100px;
+}
+
+.HMS-Accounting {
+  max-width: 90%;
+  height: 100vh;
+  background-color: aqua;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.right-image-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.left-image-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.vector {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.vector p {
+  color: #f49609, #fc8211;
+}
+.digitize {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 250px;
+  background-image: url(../../assests/image\ 1.png);
+  background: url(../../assests/Gradient.png), lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+  border-radius: 10px;
+  mix-blend-mode: soft-light;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+  /* text-align: center; */
+  gap: 1.5rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 50px; */
+  gap: 30px;
+}
+.graphic {
+  margin: auto;
+  margin-right: 600px;
+  position: absolute;
+  z-index: -999;
+  mix-blend-mode: soft-light;
+  overflow: hidden;
+  object-fit: cover;
+  width: 75%;
+  height: 250px;
+}

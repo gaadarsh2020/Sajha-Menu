@@ -1,0 +1,74 @@
+.offerings {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.offer_Items {
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  display: flex;
+}
+.offer_Items li {
+  padding: 5px 10px;
+  list-style: none;
+}
+.selected_Item {
+  background-image: linear-gradient(#ffba53, #fc8211);
+  border-radius: 7px;
+}
+
+.offer {
+  background-color: #000000;
+  color: aliceblue;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+/* .gradiant {
+  background-color: #ffba53;
+  padding: 10px 10px;
+} */
+
+.frame-13 {
+  background-color: #fdf4e5;
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 50px;
+}
+.right-Side-Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 50px 50px;
+  gap: 60px;
+  padding: 10px 20px;
+}
+.right-Side-Content p {
+  word-spacing: 1.5px;
+}
+.left-Side-Content img {
+  width: 500px;
+  height: 400px;
+  flex-shrink: 0;
+  padding: 50px;
+}
+.timi {
+  margin-top: -200px;
+  margin-left: 100px;
+}
+.timi2 {
+  margin-top: 30px;
+}

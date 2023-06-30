@@ -1,0 +1,106 @@
+section {
+  /* background-color: aqua; */
+}
+
+.choice-section {
+  width: 90%;
+  height: auto;
+  /* background-color: lightcoral; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.right-choice {
+  margin: top;
+}
+
+.client-say {
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
+
+.carousel {
+  width: 100%;
+  /* background-color: aqua; */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user1 {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: flex-start;
+  font-size: 14px;
+  gap: 25px;
+}
+.user1-image {
+  width: 173px;
+  height: 173px;
+}
+
+.user1-para {
+  display: flex;
+  text-align: flex-start;
+  padding: 10px;
+}
+
+.digitize {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 250px;
+  background-image: url(../assests/image\ 1.png);
+  background: url(../assests/Gradient.png), lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+  border-radius: 10px;
+  mix-blend-mode: soft-light;
+  position: relative;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+  /* text-align: center; */
+  gap: 1.5rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 50px; */
+  gap: 30px;
+}
+.grapahic {
+  margin: auto;
+  margin-right: 600px;
+  position: absolute;
+  z-index: -999;
+  mix-blend-mode: soft-light;
+  overflow: hidden;
+  object-fit: cover;
+  width: 75%;
+  height: 250px;
+}
