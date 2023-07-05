@@ -1,21 +1,27 @@
 .new-section {
-  max-width: 100%;
+  max-width: 90%;
+  margin: auto;
   height: 100vh;
   margin-top: 100px;
   display: flex;
   justify-content: center;
-  gap: 10rem;
+  gap: 5rem;
   /* background-color: #fc8211; */
   align-items: center;
+  background-color: #ffba53;
   /* background-color: #fc8211; */
 }
 .left-side h1 {
-  padding-left: 25px;
+  /* padding-left: 25px; */
 }
 .left-side img {
   padding-top: 50px;
 }
-
+.list-item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
 .span-class {
   background: -webkit-linear-gradient(#ffba53, #fc8211);
   -webkit-background-clip: text;

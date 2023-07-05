@@ -12,13 +12,16 @@ const ClearThings = () => {
             Let’s clear things <br />
             even <span class="span-class">More</span>
           </h1>
-          <img src={Group} alt="" />
+          <img src={Group} alt="group" />
         </div>
         <div className="right-side">
           <ul>
-            <li>
-              Can Place order without waiter app ? <AddIcon className="icon" />
-            </li>
+            <div className="list-item">
+              <li>
+                Can Place order without waiter app ?
+                <AddIcon className="icon" />
+              </li>
+            </div>
             <li>Can I order directly from waiter app without QR menu.?</li>
             <li>What are the device requirements to use Sajha Menu</li>
             <li>What are the device requirements to use Sajha Menu</li>

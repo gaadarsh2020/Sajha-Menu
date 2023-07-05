@@ -4,7 +4,7 @@ import "./navbar.css";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { Link } from "react-router-dom";
 
-const navbar = () => {
+const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
@@ -13,7 +13,7 @@ const navbar = () => {
       <div class="nav-links">
         <ul>
           <li>
-            <Link to="/Home">HOME</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/Modules">Modules</Link>
@@ -34,6 +34,8 @@ const navbar = () => {
     </nav>
   );
 };
+export default Navbar;
+
 // import React, { useState } from "react";
 // import logo from "../../assests/image101.png";
 // import { Link } from "react-router-dom";
@@ -54,6 +56,11 @@ const navbar = () => {
 //           <Link to="/menu">Menu</Link>
 //           <Link to="/about">About</Link>
 //           <Link to="/contact">Contact</Link>
+//           <Link to="/schedule">
+//             <button>
+//               Schedule a Demo <ArrowForwardIosIcon />
+//             </button>
+//           </Link>
 //         </div>
 //       </div>
 //       <div className="rightSide">
@@ -64,8 +71,13 @@ const navbar = () => {
 //         <button onClick={toggelNavbar}>
 //           <ReorderIcon />
 //         </button>
+//         <Link to="/schedule">
+//           <button>
+//             Schedule a Demo <ArrowForwardIosIcon />
+//           </button>
+//         </Link>
 //       </div>
 //     </div>
 //   );
 // }
-export default navbar;
+// export default Navbar;

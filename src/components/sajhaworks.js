@@ -5,6 +5,7 @@ import Waiter from "../assests/png waiter 1.png";
 import Chef from "../assests/Chef png 1.png";
 import Post from "../assests/POS final 1.png";
 import arrow from "../assests/Frame (3).svg";
+import vector from "../assests/Vector 21.png";
 
 const Sajhaworks = () => {
   return (
@@ -25,6 +26,7 @@ const Sajhaworks = () => {
             <h1>O2</h1>
             <p>Waiter will confirm the order and place the order</p>
           </div>
+
           <img src={arrow} alt="arrow" />
           <div className="work_Content_Item">
             <img src={Chef} alt="using" />
