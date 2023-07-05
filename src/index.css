@@ -1,16 +1,18 @@
 @font-face {
   font-family: "CustomFont";
-  src: url("/public/fonts/MONT-BLACK.OTF") format("opentype");
+  /* src: url("/public/fonts/MONT-BOLD.OTF") format("opentype"); */
+  src: url("/public/fonts/MONT-BOLD.OTF") format("opentype");
+  font-weight: 800;
 }
 
 /* @font-face {
   font-family: 'CustomFont';
   src: url('/public/fonts/MONT-BLACKITALIC.OTF') format('opentype');
 } */
-
 @font-face {
   font-family: "CustomFont";
-  src: url("/public/fonts/MONT-BOLD.OTF") format("opentype");
+  src: url("/public/fonts/MONT-REGULAR.OTF") format("opentype");
+  font-weight: 600;
 }
 
 /* @font-face {
@@ -20,21 +22,8 @@
 
 @font-face {
   font-family: "CustomFont";
-  src: url("/public/fonts/MONT-BOOK.OTF") format("opentype");
-}
-
-@font-face {
-  font-family: "CustomFont";
-  src: url("/public/fonts/MONT-EXTRALIGHT.OTF") format("opentype");
-}
-
-@font-face {
-  font-family: "CustomFont";
-  src: url("/public/fonts/MONT-EXTRALIGHTITALIC.OTF") format("opentype");
-}
-@font-face {
-  font-family: "CustomFont";
-  src: url("/public/fonts/MONT-HEAVY.OTF") format("opentype");
+  src: url("/public/fonts/MONT-SEMIBOLD.OTF") format("opentype");
+  font-weight: 700;
 }
 /* @font-face {
   font-family: 'CustomFont';

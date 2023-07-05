@@ -1,0 +1,73 @@
+.last-section {
+  width: 100%;
+  height: auto;
+  /* background-color: aqua; */
+}
+
+.hero-main {
+  width: 100%;
+  height: 80vh;
+  background-color: #fffdf9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  text-align: left;
+}
+.right-content-last {
+  width: auto;
+  height: 50vh;
+}
+.right-content-last h1 {
+  color: var(--dark, #070707);
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 105.7%;
+}
+.right-content-last p {
+  padding: 10px 5px;
+}
+.right-content-last img {
+  padding-top: 5px;
+}
+.form-container {
+  width: 708px;
+  height: 564px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-group input {
+  width: 100%;
+}
+
+.social-media {
+  width: 90%;
+  background-color: aqua;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 60px;
+}
+.email-all {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.email a {
+  list-style: none;
+  text-decoration: none;
+}
+.social-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+.content-11 {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px;
+  justify-content: space-around;
+}

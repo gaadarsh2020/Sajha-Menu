@@ -16,16 +16,16 @@ import image2 from "../../assests/image 1.png";
 const modules = () => {
   return (
     <section class="hero">
-      <div className="Hero-container">
-        <div className="hero-content">
+      <div className="Hero-container-2">
+        <div className="hero-content-2">
           <h1>
             Get Quick Ordering
             <br /> with <span className="span-class">QR Menu.</span>
           </h1>
           <p>
-            View your sales stats, Improve your menu and grow your business with
-            our touchless QR ordering solution SAJHA MENU. Click register to get
-            started
+            View your sales stats, Improve your menu and grow your business
+            <br /> with our touchless QR ordering solution SAJHA MENU. Click
+            register to get started
           </p>
           <div className="button">
             <button>

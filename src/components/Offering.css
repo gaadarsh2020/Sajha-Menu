@@ -39,12 +39,12 @@
 .frame-13 {
   background-color: #fdf4e5;
   width: 90%;
-  height: 500px;
+  height: 550px;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 50px;
   margin-top: 50px;
 }
 .right-Side-Content {

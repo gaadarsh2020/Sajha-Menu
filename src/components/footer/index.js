@@ -214,7 +214,7 @@ const Footer = () => {
       </div>
       <hr />
       <div class="container">
-        <p>&copy; 2023 Your Website. All rights reserved.</p>
+        <p>&copy; TunaTechnology. All rights reserved.</p>
       </div>
     </footer>
   );

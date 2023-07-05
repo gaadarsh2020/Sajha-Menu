@@ -3,7 +3,7 @@
   height: auto;
 }
 .faq-hero {
-  width: 90%;
+  width: 100%;
   height: 50vh;
   background-color: #fdf4e5;
   margin: auto;
@@ -13,8 +13,19 @@
   align-items: center;
   text-align: center;
   gap: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero-image-curl {
+  position: absolute;
+  top: 300;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
 }
 .faq-hero h1 {
+  margin-right: 40px;
   font-size: 64px;
   font-weight: 800;
 }

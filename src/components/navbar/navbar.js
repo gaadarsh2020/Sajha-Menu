@@ -19,45 +19,53 @@ const navbar = () => {
             <Link to="/Modules">Modules</Link>
           </li>
           <li>
-            <a href="/FAQs"> FAQS</a>
+            <Link to="/FAQs"> FAQS</Link>
           </li>
           <li>
-            <a href="/Company">Company</a>
+            <Link to="/About">Company</Link>
           </li>
         </ul>
-        <button>
-          Schedule a Demo <ArrowForwardIosIcon />
-        </button>
+        <Link to="/schedule">
+          <button>
+            Schedule a Demo <ArrowForwardIosIcon />
+          </button>
+        </Link>
       </div>
     </nav>
-
-    // <div className="navbar">
-    //   <nav>
-    //     <div className="logo-container">
-    //       <img src={image2} alt="image" />
-    //     </div>
-    //     <div className="nav-links">
-    //       <ul>
-    //         <li>
-    //           <a href="">HOME</a>
-    //         </li>
-    //         <li>
-    //           <a href="">Modules</a>
-    //         </li>
-    //         <li>
-    //           <a href=""> FAQS</a>
-    //         </li>
-    //         <li>
-    //           <a href="">Company</a>
-    //         </li>
-    //       </ul>
-    //       <button>
-    //         Schedule a Demo <ArrowForwardIosIcon />
-    //       </button>
-    //     </div>
-    //   </nav>
-    // </div>
   );
 };
+// import React, { useState } from "react";
+// import logo from "../../assests/image101.png";
+// import { Link } from "react-router-dom";
+// import "./navbar.css";
+// import ReorderIcon from "@mui/icons-material/Reorder";
 
+// function Navbar() {
+//   const [openLinks, setopenLinks] = useState(false);
+//   const toggelNavbar = () => {
+//     setopenLinks(!openLinks);
+//   };
+//   return (
+//     <div className="navbar">
+//       <div className="leftSide" id={openLinks ? "open" : "close"}>
+//         <img src={logo} alt="logo" />
+//         <div className="hiddenLinks">
+//           <Link to="/">Home</Link>
+//           <Link to="/menu">Menu</Link>
+//           <Link to="/about">About</Link>
+//           <Link to="/contact">Contact</Link>
+//         </div>
+//       </div>
+//       <div className="rightSide">
+//         <Link to="/">Home</Link>
+//         <Link to="/menu">Menu</Link>
+//         <Link to="/about">About</Link>
+//         <Link to="/contact">Contact</Link>
+//         <button onClick={toggelNavbar}>
+//           <ReorderIcon />
+//         </button>
+//       </div>
+//     </div>
+//   );
+// }
 export default navbar;

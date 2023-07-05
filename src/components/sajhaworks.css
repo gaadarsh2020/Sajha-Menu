@@ -22,7 +22,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 25px;
 }
 .work_Content_Item {
   display: flex;
@@ -34,11 +34,17 @@
 }
 
 .work_Content_Item h1 {
-  font-weight: 600;
-  font-size: 72px;
+  font-weight: 700;
+  font-size: 94px;
   background: -webkit-linear-gradient(#ffba53, #fc8211);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  line-height: 150%;
+}
+.work_Content_Item p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 110%;
 }
 .work_Content_Item img {
   height: 400px;
