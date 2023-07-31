@@ -23,15 +23,12 @@
 }
 .hero-content-demo-left {
   flex-basis: 50%;
-  /* position: relative; */
 }
 .bgImage-demo {
   position: absolute;
-  z-index: -2;
+  z-index: -999;
   top: 0;
   right: 0;
-  transform: rotate(0deg);
-  z-index: 0.1;
 }
 
 .hero-list .list {

@@ -39,18 +39,26 @@ const Offering = () => {
             with our touchless QR ordering Menu.
           </p>
           <div className="offering-button">
-            <button>Learn More</button>
+            <button className>Learn More</button>
           </div>
         </div>
         <div className="left-Side-image">
-          <img src={Rectangle} alt="rectangle" className="left-image-offer" />
+          <img
+            src={Rectangle}
+            alt="rectangle"
+            className="left-image-offer"
+            width={300}
+            height={500}
+          />
         </div>
       </div>
       <div className="frame-13">
         <div className="right-Side-Content">
           <h2>
-            Order Management with <span className="span-class">POS</span> and
-            Waiter App <span class="span-class">QR Menu</span>
+            Order Managment with
+            <br />
+            <span className="span-class">POS</span> and
+            <span className="span-class">Waiter App</span>
           </h2>
           <p>
             Digital QR menus allow customers to access menus and other
@@ -64,17 +72,23 @@ const Offering = () => {
             with our touchless QR ordering Menu.
           </p>
           <div className="offering-button">
-            <button>Learn More</button>
+            <button className>Learn More</button>
           </div>
         </div>
         <div className="left-Side-image">
-          <img src={frame} alt="frame" className="left-image-offer" />
+          <img
+            src={image}
+            alt="rectangle"
+            className="left-image-offer"
+            width={300}
+            height={500}
+          />
         </div>
       </div>
       <div className="frame-13">
         <div className="right-Side-Content">
           <h2>
-            Get Quick Ordering with QR Menu
+            Get Quick Ordering with
             <br />
             <span class="span-class">QR Menu</span>
           </h2>
@@ -90,11 +104,17 @@ const Offering = () => {
             with our touchless QR ordering Menu.
           </p>
           <div className="offering-button">
-            <button>Learn More</button>
+            <button className>Learn More</button>
           </div>
         </div>
         <div className="left-Side-image">
-          <img src={image} alt="rectangle" className="left-image-offer" />
+          <img
+            src={frame}
+            alt="rectangle"
+            className="left-image-offer"
+            width={300}
+            height={500}
+          />
         </div>
       </div>
     </section>

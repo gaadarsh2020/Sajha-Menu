@@ -24,9 +24,10 @@
 .indv_input input {
   width: 90%;
   height: 20px;
-  background-color: #f6f6f6;
+  background-color: #f8f8f8;
   border: none;
-  padding: 7px;
+  padding: 17px;
+  border: 1px solid #f6e9f6;
 }
 .indv_input textarea {
   width: 90%;

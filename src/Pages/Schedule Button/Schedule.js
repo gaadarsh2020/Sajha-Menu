@@ -59,7 +59,7 @@ const Company = () => {
             </div>
           </div>
           <div className="hero-content-demo-left">
-            <Col className="form-main col-md-6">
+            <Col className="form-main col-md-14">
               <ContactForm />
             </Col>
           </div>

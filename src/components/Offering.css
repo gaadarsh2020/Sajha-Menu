@@ -42,6 +42,7 @@
   width: 90%;
   background-color: #fdf4e5;
   margin: 5rem auto;
+  padding: 5rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,13 +63,14 @@
   padding: 5rem 5rem;
 }
 .right-Side-Content p {
-  word-spacing: 0px;
+  text-align: justify;
 }
 .right-Side-Content h2 {
   font-weight: 800;
 }
-.left-Side-image img {
-  margin: auto;
+.left-image-offer {
+  width: 100%;
+  height: auto;
 }
 .timi {
   margin-top: -200px;
@@ -86,7 +88,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .frame-13 {
+  /* .frame-13 {
     display: flex;
     flex-direction: column;
   }
@@ -97,29 +99,35 @@
   }
   .heading h1 {
     font-size: 32px;
+  } */
+  .frame-13 {
+    flex-direction: column;
+  }
+  .right-Side-Content h2 {
+    margin-left: -4rem;
+  }
+  .right-Side-Content p {
+    margin-left: -4rem;
+    margin-right: -4rem;
+  }
+  .offering-button {
+    margin-left: -5rem;
   }
 }
 @media screen and (max-width: 425px) {
-  .offer {
-    margin: auto;
-  }
-  .right-Side-Content h2 {
-    font-size: 20px;
-  }
   .right-Side-Content p {
-    font-size: 10px;
-    word-spacing: none;
+    margin-top: 1rem;
   }
-  .frame-13 {
-    margin: 1rem;
-  }
-  .frame-13 p {
-    margin: auto;
-    margin-top: -2rem;
+
+  .heading h1 {
+    font-size: 32px;
   }
 }
 @media screen and (max-width: 320px) {
-  .right-Side-Content p {
-    display: inline-block;
+  .right-Side-Content {
+    margin: none;
+  }
+  .right-Side-Content h1 {
+    text-align: lefts;
   }
 }
