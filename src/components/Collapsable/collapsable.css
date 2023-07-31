@@ -1,0 +1,74 @@
+.wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accordian {
+  width: 90%;
+  height: auto;
+}
+.item {
+  padding: 1rem 2rem;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.content {
+  max-height: auto;
+  overflow-y: hidden;
+  transition: all 1s cubic-bezier(0, 1, 0, 1);
+}
+
+.content .show {
+  height: auto;
+  overflow-y: hidden;
+  max-height: 9999px;
+  transition: all 1s cubic-bezier(1, 0, 1, 0);
+}
+
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 20px;
+  }
+  .content.show {
+    font-size: 15px;
+    margin-right: -2rem;
+  }
+
+  .title .Icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .title h3 {
+    font-size: 11px;
+  }
+  .content.show {
+    font-size: 10px;
+    margin-right: -2rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .title h3 {
+    display: inline-block;
+    font-size: 9px;
+  }
+  .content.show {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .title h3 {
+    text-align: justify;
+    margin-left: -3rem;
+  }
+  .content.show {
+    font-size: 8px;
+    text-align: justify;
+    margin: auto;
+  }
+}

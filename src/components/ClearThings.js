@@ -1,37 +1,32 @@
 import React from "react";
 import "./ClearThings.css";
 import Group from "../assests/Group 537.png";
-import AddIcon from "@mui/icons-material/Add";
+
+import BsAccordian from "./Bsaccordian/Accordian";
 
 const ClearThings = () => {
   return (
     <>
-      <div className="new-section">
-        <div className="left-side">
-          <h1>
-            Let’s clear things <br />
-            even <span class="span-class">More</span>
-          </h1>
-          <img src={Group} alt="group" />
+      <section className="clear-things">
+        <div className="clear-things-main">
+          <div className="clear-things-right">
+            <h1>
+              Lets Clear Things <br /> even
+              <span className="span-class">More</span>
+            </h1>
+            <img
+              src={Group}
+              alt="iamge2"
+              className="burger-image"
+              width={200}
+              height={100}
+            />
+          </div>
+          <div className="clear-things-left">
+            <BsAccordian />
+          </div>
         </div>
-        <div className="right-side">
-          <ul>
-            <div className="list-item">
-              <li>
-                Can Place order without waiter app ?
-                <AddIcon className="icon" />
-              </li>
-            </div>
-            <li>Can I order directly from waiter app without QR menu.?</li>
-            <li>What are the device requirements to use Sajha Menu</li>
-            <li>What are the device requirements to use Sajha Menu</li>
-            <li>How to create QR code menu</li>
-            <li>How to create QR code menu</li>
-            <li>How long will it take to set up</li>
-            <li>How long will it take to set up</li>
-          </ul>
-        </div>
-      </div>
+      </section>
     </>
   );
 };

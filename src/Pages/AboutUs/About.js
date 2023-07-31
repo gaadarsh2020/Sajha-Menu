@@ -6,6 +6,7 @@ import image77 from "../../assests/About content/image 110.png";
 import image88 from "../../assests/About content/Burgur and phone.png";
 import image22 from "../../assests/About content/image 112 (1).png";
 import image33 from "../../assests/About content/Frame 628.png";
+import Digitize from "../../Digitize";
 import image2 from "../../assests/image 1.png";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
@@ -13,16 +14,18 @@ const About = () => {
   return (
     <section>
       <div className="hero-12">
-        <h1>
-          Get to <span className="span-class">Know</span>Us.
-        </h1>
-
-        <p>
-          IT services from our company include technology <br />
-          and business experts who manage all kinds of business processes.
-        </p>
-
-        <img src={frame66} alt="fame123" className="auto" />
+        <div className="hero-12-h1">
+          <h1>
+            Get to <span className="span-class-3">Know</span> Us.
+          </h1>
+        </div>
+        <div className="hero-12-p">
+          <p>
+            IT services from our company include technology <br />
+            and business experts who manage all kinds of business processes.
+          </p>
+        </div>
+        <img src={frame66} alt="frame123" className="auto" />
       </div>
 
       <div className="about-us">
@@ -45,8 +48,8 @@ const About = () => {
             problems. In terms of time, cost, design, and performance, our
             projects are always successful.
           </p>
-          <button>
-            Company <img src={frame7} />
+          <button className="spin-button">
+            <span className="span55">Company</span> <img src={frame7} />
           </button>
         </div>
         <div className="image-left">
@@ -56,7 +59,7 @@ const About = () => {
 
       <div className="story">
         <div className="story-right">
-          <img src={image88} alt="" />
+          <img src={image88} alt="image22" className="story-right-img" />
         </div>
         <div className="story-content-left">
           <h2>
@@ -89,31 +92,11 @@ const About = () => {
       </div>
       <div className="tuna-logo">
         <div className="tuna">
-          <img src={image22} alt="iamge22" />
-          <img src={image33} alt="image33" />
+          <img src={image22} alt="iamge22" className="image-tuna" />
+          <img src={image33} alt="image33" className="image-tuna" />
         </div>
       </div>
-      <div className="digitize">
-        <img src={image2} className="graphic" />
-        <div className="left">
-          <h1>
-            Ready to digitize your <br /> business ?
-          </h1>
-          <p>
-            Join with us and revolutionize your process and profits. Tuna ERP
-            <br />
-            solution connect your business and drive value.
-          </p>
-        </div>
-        <div className="right">
-          <button>
-            Schedule a Demo <ArrowForwardIosIcon />
-          </button>
-          <h5>
-            <u>Get some FAQS answer</u>
-          </h5>
-        </div>
-      </div>
+      <Digitize />
     </section>
   );
 };

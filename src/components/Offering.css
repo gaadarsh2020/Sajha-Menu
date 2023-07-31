@@ -5,7 +5,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 5rem;
+}
+.heading h1 {
+  font-weight: 800;
 }
 .offer_Items {
   justify-content: space-between;
@@ -26,44 +29,46 @@
 .offer {
   background-color: #000000;
   color: aliceblue;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   padding: 10px 15px;
   border-radius: 5px;
 }
-/* .gradiant {
+.gradiant {
   background-color: #ffba53;
   padding: 10px 10px;
-} */
+}
 
 .frame-13 {
-  background-color: #fdf4e5;
   width: 90%;
-  height: 550px;
-  margin: auto;
+  background-color: #fdf4e5;
+  margin: 5rem auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 50px;
-  margin-top: 50px;
+  flex: 50%;
+}
+.frame-13 img {
+  width: 100%;
+  height: auto;
 }
 .right-Side-Content {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 50px 50px;
-  gap: 60px;
-  padding: 10px 20px;
+  margin: 5rem 5rem;
+  gap: 3rem;
+  padding: 10px 20px; */
+  padding: 5rem 5rem;
 }
 .right-Side-Content p {
-  word-spacing: 1.5px;
+  word-spacing: 0px;
 }
-.left-Side-Content img {
-  width: 500px;
-  height: 400px;
-  flex-shrink: 0;
-  padding: 50px;
+.right-Side-Content h2 {
+  font-weight: 800;
+}
+.left-Side-image img {
+  margin: auto;
 }
 .timi {
   margin-top: -200px;
@@ -71,4 +76,50 @@
 }
 .timi2 {
   margin-top: 30px;
+}
+.left-image-offer {
+  width: 100%;
+  height: auto;
+}
+.offering-button {
+  margin-left: -1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .frame-13 {
+    display: flex;
+    flex-direction: column;
+  }
+  .right-Side-Content p {
+    display: inline;
+    text-align: justify;
+    word-spacing: none;
+  }
+  .heading h1 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .offer {
+    margin: auto;
+  }
+  .right-Side-Content h2 {
+    font-size: 20px;
+  }
+  .right-Side-Content p {
+    font-size: 10px;
+    word-spacing: none;
+  }
+  .frame-13 {
+    margin: 1rem;
+  }
+  .frame-13 p {
+    margin: auto;
+    margin-top: -2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .right-Side-Content p {
+    display: inline-block;
+  }
 }

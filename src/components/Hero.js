@@ -7,29 +7,26 @@ import image2 from "../assests/image 1.png";
 
 const Hero = () => {
   return (
-    <section>
-      <div className="Hero-container-1">
-        <img src={image2} className="grapahic_element-1" />
-        <div className="hero-content-1">
-          <h1>
-            Revolutionize your’s <br />
-            dining experience.
-          </h1>
-          <p>
-            View your sales stats, Improve your menu and grow your business with
-            our touchless QR ordering solution SAJHA MENU. Click register to get
-            <br />
-            started
-          </p>
-          <div className="button">
+    <section className="hero-section-1">
+      <div className="hero-content">
+        <img src={image2} className="graphic-element" />
+        <div className="hero-content-right">
+          <div className="hero-content-text">
+            <h1>Revolutionize your’s dining experience.</h1>
+            <p>
+              View your sales stats, Improve your menu and grow your business
+              with our touchless QR ordering solution SAJHA MENU. Click register
+              to get started
+            </p>
+          </div>
+          <div className="button-hero">
             <button>
-              Schedule a Demo
-              <ArrowForwardIosIcon />
+              Schedule a Demo <ArrowForwardIosIcon className="forward-Icon" />
             </button>
           </div>
         </div>
-        <div className="Hero-image-1">
-          <img src={Group529} alt="hero-image" className="hero-image-99" />
+        <div className="hero-content-left">
+          <img src={Group529} alt="left" className="image1" />
         </div>
       </div>
     </section>

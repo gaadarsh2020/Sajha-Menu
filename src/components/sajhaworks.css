@@ -2,78 +2,108 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 4rem;
   padding-top: 80px;
 }
 .header {
   width: 90%;
+  height: auto;
   text-align: center;
   margin: auto;
   color: #000000;
 }
+.header h1 {
+  font-size: 32px;
+  font-weight: 800;
+}
 
 .work_section {
   width: 90%;
+  height: auto;
   margin: auto;
 }
 
 .work_content {
+  width: 90%;
+  margin: auto auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 1rem;
+  position: relative;
 }
 .work_Content_Item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 1rem;
   object-fit: cover;
 }
-
+.work_Content_Item img {
+  max-width: 100%;
+  height: auto;
+}
 .work_Content_Item h1 {
   font-weight: 700;
-  font-size: 94px;
+  font-size: 64px;
   background: -webkit-linear-gradient(#ffba53, #fc8211);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 150%;
 }
 .work_Content_Item p {
+  color: #000;
+  text-align: center;
+  /* font-family: Mont; */
+  font-size: 20px;
+  /* font-style: normal; */
   font-weight: 700;
-  font-size: 24px;
-  line-height: 110%;
+  line-height: 150%;
 }
 .work_Content_Item img {
-  height: 400px;
-  width: 260px;
+  max-width: 100%;
+  height: auto;
 }
 .arrow1 {
-  padding-bottom: 10rem;
+  padding-bottom: 14.5rem;
 }
-.vector {
+.arrow2 {
+  padding-bottom: 7.4rem;
+}
+.arrow3 {
+  padding-bottom: 12rem;
+}
+.vector1 {
+  position: absolute;
   z-index: -1;
+  margin-bottom: 10rem;
+  margin-right: 5rem;
 }
-/* .offerings {
-  background-color: #fc8211;
-  height: 10vh;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  letter-spacing: 3px;
+
+@media screen and (max-width: 768px) {
+  .work_content {
+    display: flex;
+    flex-direction: column;
+  }
 }
-.offerings h2 {
-  margin-left: auto;
-  margin-right: auto;
+
+@media screen and (max-width: 768px) {
+  .work_Content_Item {
+    display: flex;
+    flex-direction: column;
+  }
+  .work_Content_Item h1 {
+    font-size: 4rem;
+  }
+  .work_content p {
+    font-size: 1rem;
+  }
 }
-.offerings-off {
-  color: aliceblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: #000000;
-  padding: 5px 5px;
-}  */
+
+@media screen and (max-width: 425px) {
+  .header h1 {
+    font-size: 20px;
+  }
+}

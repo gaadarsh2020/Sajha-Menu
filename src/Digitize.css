@@ -1,0 +1,95 @@
+.section {
+  width: 100%;
+  height: auto;
+}
+.digitize-section {
+  border-radius: 8px;
+  width: 90%;
+  height: auto;
+  margin: 5rem auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  background: url(../src/assests/Gradient.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.back-image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  mix-blend-mode: soft-light;
+}
+
+.digitize-head {
+  padding: 1rem 0rem;
+}
+.digitize-head h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+.digitize-left {
+  margin: 3rem 0rem;
+}
+.text {
+  margin: 1.5rem auto;
+}
+
+.digitize-001:hover {
+  transform: scale(0.5rem);
+  -webkit-transform: scale(0.5rem);
+  cursor: pointer;
+}
+.digitize-001:hover .arrow-digitize {
+  animation: forwarded alternate 2s ease-out;
+}
+@keyframes forwarded {
+  0% {
+    translatex: (0);
+  }
+  50% {
+    translatex: (100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .digitize-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .digitize-section img {
+    display: none;
+  }
+  .digitize-head h2 {
+    font-size: 24px;
+  }
+  .digitize-left {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .digitize-head h2 {
+    font-size: 22px;
+  }
+  .digitize-paragraph p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .digitize-head h2 {
+    font-size: 18px;
+  }
+  .digitize-paragraph p {
+    font-size: 13px;
+  }
+}

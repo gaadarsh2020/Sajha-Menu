@@ -2,15 +2,15 @@ import React from "react";
 import "./Offering.css";
 import Rectangle from "../assests/Rectangle 2.png";
 import image from "../assests/image 119.png";
-import Rectangle1 from "../assests/Rectangle 2 (1).png";
-import tunaHms from "../assests/mockup for tuna HMS 4.png";
+
+import frame from "../assests/Frame 14.png";
 
 const Offering = () => {
   return (
     <section>
       <div className="offerings">
         <div className="heading">
-          <h2>Our Offerings</h2>
+          <h1>Our Offerings</h1>
         </div>
         <div className="offer">
           <ul className="offer_Items">
@@ -20,7 +20,6 @@ const Offering = () => {
           </ul>
         </div>
       </div>
-
       <div className="frame-13">
         <div className="right-Side-Content">
           <h2>
@@ -39,19 +38,19 @@ const Offering = () => {
             View your sales stats, Improve your menu, and grow your business
             with our touchless QR ordering Menu.
           </p>
-          <button>Learn More</button>
+          <div className="offering-button">
+            <button>Learn More</button>
+          </div>
         </div>
         <div className="left-Side-image">
-          <img src={Rectangle} alt="rectangle" />
+          <img src={Rectangle} alt="rectangle" className="left-image-offer" />
         </div>
       </div>
       <div className="frame-13">
         <div className="right-Side-Content">
           <h2>
             Order Management with <span className="span-class">POS</span> and
-            Waiter App
-            <br />
-            <span class="span-class">QR Menu</span>
+            Waiter App <span class="span-class">QR Menu</span>
           </h2>
           <p>
             Digital QR menus allow customers to access menus and other
@@ -64,14 +63,12 @@ const Offering = () => {
             View your sales stats, Improve your menu, and grow your business
             with our touchless QR ordering Menu.
           </p>
-          <button>Learn More</button>
+          <div className="offering-button">
+            <button>Learn More</button>
+          </div>
         </div>
         <div className="left-Side-image">
-          <img src={Rectangle1} alt="rectangle" className="timi2" />
-
-          <div className="timi">
-            <img src={tunaHms} alt="rectangle" />
-          </div>
+          <img src={frame} alt="frame" className="left-image-offer" />
         </div>
       </div>
       <div className="frame-13">
@@ -92,10 +89,12 @@ const Offering = () => {
             View your sales stats, Improve your menu, and grow your business
             with our touchless QR ordering Menu.
           </p>
-          <button>Learn More</button>
+          <div className="offering-button">
+            <button>Learn More</button>
+          </div>
         </div>
         <div className="left-Side-image">
-          <img src={image} alt="rectangle" />
+          <img src={image} alt="rectangle" className="left-image-offer" />
         </div>
       </div>
     </section>

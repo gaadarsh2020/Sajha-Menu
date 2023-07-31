@@ -1,61 +1,47 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
 }
-* .Hero-container-1 {
-  height: 90vh;
+
+.hero-section-1 {
   width: 100%;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items:background: url(../assests/Gradient.png), lightgray 50% / cover no-repeat;
+  height: auto;
+  background: url(../assests/Gradient.png);
   background-repeat: no-repeat;
   background-size: cover;
-  mix-blend-mode: soft-light;
-  overflow: hidden;
-  position: relative; center;
-  
+  background-attachment: fixed;
 }
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.grapahic_element-1 {
+  position: relative;
+  overflow: hidden;
+}
+.graphic-element {
+  max-width: 100%;
   height: auto;
-  margin: auto;
-  margin-right: 600px;
+  height: 1376px;
   position: absolute;
-  z-index: -999;
-  mix-blend-mode: soft-light;
+  left: 0;
+  top: -20;
   overflow: hidden;
   object-fit: cover;
+  opacity: 0.5;
+  mix-blend-mode: soft-light;
 }
-.Hero-content-1 {
-  /* display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 200px;
-  margin-left: 100px; */
-
-/* position: absolute; */
-/* } */
-/* 
-.hero-content-1 h1 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--dark, #070707);
-  font-size: 64px;
-  font-weight: 900;
-
-  line-height: 105.7%;
+.hero-content-text h1 {
+  text-align: left;
+  margin-left: 3rem;
 }
-.hero-content-1 p {
-  display: flex;
-  width: 674px;
-  height: 73px;
-  flex-direction: column;
-  color: #232323;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 150%;
+
+.hero-content-text p {
+  text-align: left;
+  margin-left: 3rem;
+}
+.button-hero {
+  margin: 2rem;
 }
 button {
   display: flex;
@@ -65,74 +51,54 @@ button {
   color: white;
   border: none;
   border-radius: 4px;
+  margin-left: 1rem;
 }
-
-.hero-image-1 {
+button:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
 }
-.hero-image-99 { */
-/* 
-  flex-shrink: 0;
-} */
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-section {
-}
-.Hero-container-1 {
-  height: auto;
-  width: 100%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  background: url(../assests/Gradient.png), lightgray 50% / cover no-repeat;
-  background-repeat: no-repeat;
-  background-size: cover;
-  mix-blend-mode: soft-light;
-
-  overflow: hidden;
+.forward-Icon {
   position: relative;
 }
-.grapahic_element-1 {
+button:hover .forward-Icon {
+  animation: myfirst 0.7s 20;
+  animation-direction: alternate;
+}
+
+.image1 {
+  max-width: 100%;
+  margin: 5rem;
   height: auto;
-  margin: auto;
-  top: 0;
-  right: 0;
-  margin-right: 0px;
-  position: absolute;
-  z-index: -999;
-  mix-blend-mode: soft-light;
-  overflow: hidden;
-  object-fit: cover;
 }
-.hero-content-1 {
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+@media screen and (max-width: 768px) {
+  .hero-content-text h1 {
+    font-size: 30px;
+  }
+  .hero-content-text p {
+    font-size: 20px;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    margin-left: -2rem;
+  }
+  .image1 {
+    margin: auto;
+  }
 }
-.hero-content-1 h1 {
-  /* color: var(--dark, #070707); */
-  font-size: 60px;
-  /* font-family: Mont;
-  font-style: normal; */
-  font-weight: 800;
-}
-.hero-content-1 p {
-  color: #232323;
-  font-size: 16px;
-  font-family: Mont;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-}
-.hero-image-99 {
-  width: 700px;
-  height: 652px;
-}
-.hero-content-1 h1 {
-  display: flex;
+
+@media screen and (max-width: 425px) {
+  .hero-content-text h1 {
+    font-size: 30px;
+  }
+  .hero-content-text p {
+    font-size: 10px;
+  }
+  .hero-content-left img {
+    width: 90%;
+    height: auto;
+    margin-left: 3rem;
+  }
 }

@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="footer_main">
         <div className="about_section">
           <div className="about_head">
-            <h4>About Us</h4>
+            <h2>About Us</h2>
           </div>
           <div className="about_content">
             <p>
@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
         <div className="products_section">
           <div className="products_head">
-            <h4>Our Products</h4>
+            <h2>Our Products</h2>
           </div>
           <div className="products_content">
             <ul className="products_list">
@@ -29,9 +29,10 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+
         <div className="contact_section">
           <div className="contact_head">
-            <h4>Get In Touch</h4>
+            <h2>Get In Touch</h2>
           </div>
           <div className="contact_content">
             <ul className="contact_list">
@@ -94,9 +95,10 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+
         <div className="social_section">
           <div className="social_head">
-            <h4>Follow Us</h4>
+            <h2>Follow Us</h2>
           </div>
           <div className="social_content">
             <ul className="social_list">
@@ -213,7 +215,7 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <div class="container">
+      <div class="container_footer">
         <p>&copy; TunaTechnology. All rights reserved.</p>
       </div>
     </footer>

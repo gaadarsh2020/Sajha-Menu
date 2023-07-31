@@ -1,81 +1,41 @@
-section {
+.hero-module {
   width: 100%;
   height: auto;
 }
-
-.Hero-container-2 {
-  height: 90vh;
-  width: 100%;
+.hero-module-content {
+  background: #fdf4e5;
   display: flex;
-  gap: 30rem;
-  /* justify-content: center; */
-  /* align-items: flex-start; */
-  background-color: #fdf4e5;
-  overflow: hidden;
-  position: relative;
+  text-align: center;
+  width: 100%;
 }
-.hero-content-2 {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: flex-start; */
+
+.hero-module-content-right {
+  margin: 5rem 1rem;
+  padding: 1rem;
   text-align: left;
-  line-height: 30px;
-  margin: auto;
+  flex-basis: 50%;
 }
-.hero-content-2 h1 {
-  /* color: #070707; */
+.hero-module-heading h1 {
+  margin-left: 1rem;
+}
+.span-class-2 {
+  background: var(
+      --sajha-menu,
+      linear-gradient(116deg, #ffba53 0%, #fc8211 100%)
+    )
+    center no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 64px;
-  /* font-family: Mont; */
   font-style: normal;
   font-weight: 800;
-  line-height: 105.7%;
 }
-.hero-content-2 p {
-  color: #232323;
-  font-size: 16px;
-  font-family: Mont;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-  margin-bottom: 20px;
+.hero-module-para {
+  margin: 2rem;
+  margin-left: 1rem;
+  text-align: left;
 }
-
-/* .hero-content-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start; */
-
-/* margin: auto; */
-/* } */
-/* .hero-content-2 p {
-  margin-left: 50px; */
-
-/* .hero-content-2 h1 {
-  display: flex;
-  margin-top: 100px;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-/* color: var(--dark, #070707);
-  font-size: 64px;
-  font-weight: 900;
-
-  line-height: 105.7%;
-}  */
-/* .hero-content-2 {
-  display: flex;
-  width: 674px;
-  height: 73px;
-  flex-direction: column;
-  /* justify-content: center; */
-/* align-items: center;
-  color: #232323;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 150%; */
-
 button {
   display: flex;
   padding: 16px;
@@ -84,66 +44,118 @@ button {
   color: white;
   border: none;
   border-radius: 4px;
+  margin-left: 1rem;
 }
-/* .hero-image {
+button:hover {
+  transform: scale(0.2rem);
+  -webkit-transform: scale(0.3);
+  transform: scale(1.1);
+}
+.forward-Icon {
   position: relative;
-} */
+}
+button:hover .forward-Icon {
+  animation: myfirst 0.5s 20;
+  animation-direction: infinte;
+}
 
-.hero-image-2 img {
-  /* width: 500px;
-  height: auto; */
+.hero-module-right {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-basis: 50%;
+}
+
+.image-top {
   position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  margin-left: 7rem;
+  margin-top: 6rem;
+  animation: scanner 5s infinite linear;
+  animation-direction: alternate;
 }
-.image1 {
-  /* margin-top: 40px; */
-  width: auto;
-  height: auto;
-  top: 0px;
-  right: 50px;
+@keyframes scanner {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  50% {
+    top: 30px;
+    left: 0px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
 }
-.image2 {
-  top: 200px;
-  right: 5px;
-  /* margin-top: 40px; */
+.image-module-right {
+  object-fit: contain;
+  align-self: flex-start;
+  position: absolute;
+  animation: rotate-animation 30s infinite linear;
+}
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.image-module-right-2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
 }
 
-/* .image1 {
-  width: auto;
-  height: auto;
-} */
 .frame {
-  /* background-color: #fdf4e5; */
   width: 90%;
-  height: 500px;
+  height: auto;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
-  margin-top: 150px;
-}
-.frame12 {
-  /* background-color: #fdf4e5; */
-  width: 90%;
-  height: 500px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-  margin-top: 50px;
+  gap: 10px;
+  margin-top: 3rem;
 }
 
 .step1 {
   width: 90%;
-  height: 10vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
-
+.frame12 {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-Side-Content {
+  flex-basis: 50%;
+}
+.menu-image-1 {
+  width: 100%;
+  height: auto;
+}
+.menu-image-2 {
+  width: 100%;
+  height: auto;
+}
 .other-modules {
   max-width: 90%;
   display: flex;
@@ -152,15 +164,17 @@ button {
   align-items: center;
   margin: auto;
   gap: 2rem;
-  margin-top: 100px;
+  margin-top: 2rem;
 }
-
+.button2 {
+  margin: 0;
+}
 .HMS-Accounting {
   max-width: 90%;
   height: 100vh;
   /* background-color: aqua; */
   margin: auto;
-  margin-top: 100px;
+  margin-top: 1rem;
   display: flex;
   justify-content: space-around;
 }
@@ -179,34 +193,22 @@ button {
   align-items: center;
   gap: 1rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 .vector {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: 2rem;
+  justify-content: space-evenly;
+  padding: 20px;
 }
-.vector p {
+.vector-para p {
   color: #f49609, #fc8211;
+  display: inline;
 }
-.digitize {
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  height: 250px;
-  background-image: url(../../assests/image\ 1.png);
-  background: url(../../assests/Gradient.png), lightgray 50% / cover no-repeat;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20rem;
-  border-radius: 10px;
-  mix-blend-mode: soft-light;
+.vector-image img {
+  padding-left: 5px;
 }
+
 .left {
   display: flex;
   flex-direction: column;
@@ -224,14 +226,129 @@ button {
   /* margin-right: 50px; */
   gap: 30px;
 }
-.graphic {
-  margin: auto;
-  margin-right: 600px;
-  position: absolute;
-  z-index: -999;
-  mix-blend-mode: soft-light;
-  overflow: hidden;
-  object-fit: cover;
-  width: 75%;
-  height: 250px;
+.right-image-1 img {
+  width: 100%;
+  height: auto;
+}
+.left-image-2 img {
+  width: 100%;
+  height: auto;
+}
+.vector img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 1024px) {
+  .image-top {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-module-content {
+    flex-direction: column;
+  }
+  .hero-module-right {
+    display: none;
+  }
+  .hero-module-heading h1 {
+    font-size: 40px;
+  }
+  .hero-module-para p {
+    font-size: 15px;
+  }
+  .span-class-2 {
+    font-size: 40px;
+  }
+  .frame {
+    flex-direction: column;
+    display: block;
+  }
+  .right-Side-Content {
+    display: block;
+  }
+  .frame12 {
+    flex-direction: column;
+  }
+  .menu-image-1 {
+    width: 70%;
+    height: 70%;
+    padding: 0 4rem;
+  }
+  .other-modules {
+    display: block;
+    padding: 3rem 3rem;
+  }
+  .HMS-Accounting {
+    flex-direction: column;
+    margin: 10rem auto;
+    gap: 2rem;
+  }
+  .right-image-1 img {
+    width: 60%;
+    height: auto;
+  }
+  .left-image-2 img {
+    width: 40%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero-module-heading h1 {
+    font-size: 40px;
+  }
+  .hero-module-para p {
+    font-size: 12px;
+  }
+  .span-class-2 {
+    font-size: 40px;
+  }
+  .right-Side-Content h2 {
+    margin-top: -3rem;
+  }
+  .right-Side-Content p {
+    margin-top: -2rem;
+  }
+  .other-modules p {
+    font-size: 12px;
+  }
+  .right-image-1 {
+    margin-top: -10rem;
+  }
+  .right-image-1 p {
+    font-size: 13px;
+  }
+  .left-image-2 p {
+    font-size: 13px;
+  }
+  .Digitize-section {
+    margin-top: -7rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero-module-heading h1 {
+    font-size: 22px;
+  }
+  .span-class-2 {
+    font-size: 30px;
+  }
+  .right-Side-Content h2 {
+    margin-top: -3rem;
+  }
+  .step1 h2 {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .other-modules h2 {
+    font-size: 20px;
+  }
+  .other-modules p {
+    font-size: 12px;
+  }
+  .right-image-1 p {
+    font-size: 12px;
+  }
+  .left-image-2 p {
+    font-size: 12px;
+  }
 }

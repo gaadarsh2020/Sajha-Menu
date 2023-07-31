@@ -1,0 +1,97 @@
+.client-say {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  background-color: antiquewhite;
+  gap: 3rem;
+}
+
+.mySwiper {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.swiper-div {
+  max-width: 90%;
+  height: auto;
+  margin-bottom: -2rem;
+}
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.client-say h2 {
+  padding-top: 3rem;
+}
+
+.user1 {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-size: 14px;
+  gap: 10px;
+  box-shadow: 3px 3px 3px rgba(108, 108, 108, 0.1);
+}
+
+.user1-para {
+  display: flex;
+  text-align: flex-start;
+  padding: 0px;
+}
+.user1-para p {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .client-say {
+    height: auto;
+  }
+  .user1 {
+    width: 40%;
+    height: 50%;
+    flex-direction: column;
+  }
+  .user1-para p {
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .user1-para p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .user1-para p {
+    font-size: 10px;
+  }
+}

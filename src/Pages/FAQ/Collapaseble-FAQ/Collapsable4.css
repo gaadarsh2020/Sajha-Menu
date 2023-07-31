@@ -1,0 +1,36 @@
+.wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accordian {
+  width: 90%;
+  height: auto;
+}
+.item {
+  padding: 1rem 2rem;
+}
+.title {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 1s cubic-bezier(0, 1, 0, 1);
+  margin-left: 0rem;
+}
+
+.content.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 1s cubic-bezier(1, 0, 1, 0);
+  margin-left: 1rem;
+}
+.Icon:hover {
+  transform: rotate(750deg);
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
