@@ -62,6 +62,7 @@ button:hover .forward-Icon {
 .hero-module-right {
   position: relative;
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -77,6 +78,23 @@ button:hover .forward-Icon {
   margin-top: 6rem;
   animation: scanner 5s infinite linear;
   animation-direction: alternate;
+}
+.step1 h1 {
+  font-weight: 700;
+  font-size: 32px;
+}
+.left-Side-image {
+  position: relative;
+}
+.menu-image-2 {
+  position: relative;
+  left: 0;
+  right: 0;
+}
+.menu-image-3 {
+  position: absolute;
+  left: 10;
+  right: 30;
 }
 @keyframes scanner {
   0% {

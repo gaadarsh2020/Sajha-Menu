@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Offering.css";
 import Rectangle from "../assests/Rectangle 2.png";
 import image from "../assests/image 119.png";
-
+import SlideIn from "../components/SlideIn";
 import frame from "../assests/Frame 14.png";
+import { motion } from "framer-motion";
 
 const Offering = () => {
+  const [toggle, setToggle] = useState(1);
+
+  const updateToggle = (id) => {
+    setToggle(id);
+  };
+
+  const [slideIn, setSlideIn] = useState(false);
+
   return (
     <section>
       <div className="offerings">
@@ -14,14 +23,20 @@ const Offering = () => {
         </div>
         <div className="offer">
           <ul className="offer_Items">
-            <li className="selected_Item">Qr Menu</li>
-            <li>POS & Waiter App </li>
-            <li>Accounting Software</li>
+            <li className="selected_Item" onClick={() => updateToggle(1)}>
+              Qr Menu
+            </li>
+            <li className="item_offering" onClick={() => updateToggle(2)}>
+              POS & Waiter App
+            </li>
+            <li className="item_offering" onClick={() => updateToggle(3)}>
+              Accounting Software
+            </li>
           </ul>
         </div>
       </div>
-      <div className="frame-13">
-        <div className="right-Side-Content">
+      <div className={toggle === 1 ? "frame-13" : "content-offering"}>
+        <motion.div className="right-Side-Content" animate={{ x: -10 }}>
           <h2>
             Get Quick Ordering with
             <br />
@@ -39,9 +54,9 @@ const Offering = () => {
             with our touchless QR ordering Menu.
           </p>
           <div className="offering-button">
-            <button className>Learn More</button>
+            <button>Learn More</button>
           </div>
-        </div>
+        </motion.div>
         <div className="left-Side-image">
           <img
             src={Rectangle}
@@ -52,7 +67,7 @@ const Offering = () => {
           />
         </div>
       </div>
-      <div className="frame-13">
+      <div className={toggle === 2 ? "frame-13" : "content-offering"}>
         <div className="right-Side-Content">
           <h2>
             Order Managment with
@@ -72,7 +87,7 @@ const Offering = () => {
             with our touchless QR ordering Menu.
           </p>
           <div className="offering-button">
-            <button className>Learn More</button>
+            <button>Learn More</button>
           </div>
         </div>
         <div className="left-Side-image">
@@ -85,7 +100,7 @@ const Offering = () => {
           />
         </div>
       </div>
-      <div className="frame-13">
+      <div className={toggle === 3 ? "frame-13" : "content-offering"}>
         <div className="right-Side-Content">
           <h2>
             Get Quick Ordering with

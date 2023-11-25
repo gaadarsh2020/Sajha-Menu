@@ -6,12 +6,12 @@ import Offering from "../../components/Offering";
 import Choice from "../../components/Choice";
 import Swiper from "../../components/swiper";
 import Digitize from "../../Digitize";
+import { Parallax } from "react-scroll-parallax";
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <Sajhaworks />
       <ClearThings />
       <Offering />
       <Choice />

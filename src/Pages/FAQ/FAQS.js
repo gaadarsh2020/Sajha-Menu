@@ -5,6 +5,8 @@ import Digitize from "../../../src/Digitize";
 import Collapsable2 from "./Collapaseble-FAQ/Collapsable2";
 import Collapsable3 from "./Collapaseble-FAQ/Collapsable3";
 import Collapsable4 from "./Collapaseble-FAQ/Collapsable4";
+import { Accordion } from "react-bootstrap";
+import Bsaccordian from "../../components/Bsaccordian/Accordian";
 
 const FAQS = () => {
   return (
@@ -27,16 +29,17 @@ const FAQS = () => {
               <h1>FAQ About Sajha Menu</h1>
             </div>
             <div className="collapsable-1">
-              <Collapsable2 />
+              <Bsaccordian />
             </div>
           </div>
+
           <div className="left-question">
             <div className="left-question-header2">
               <div className="faq-pos">
                 <h1>FAQ about POS</h1>
               </div>
               <div className="collapsable-2">
-                <Collapsable3 />
+                <Bsaccordian />
               </div>
             </div>
 
@@ -44,7 +47,7 @@ const FAQS = () => {
               <div className="left-question-header3">
                 <h1>FAQ about Accounting App</h1>
                 <div className="collapsabel-3">
-                  <Collapsable4 />
+                  <Bsaccordian />
                 </div>
               </div>
             </div>

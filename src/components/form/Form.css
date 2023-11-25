@@ -1,3 +1,7 @@
+/* .contact-section-demo {
+  background-color: #fffdf9;
+} */
+
 .contact_form {
   height: auto;
   background: #ffffff;
@@ -26,7 +30,7 @@
   height: 20px;
   background-color: #f8f8f8;
   border: none;
-  padding: 17px;
+  padding: 16px 16px;
   border: 1px solid #f6e9f6;
 }
 .indv_input textarea {

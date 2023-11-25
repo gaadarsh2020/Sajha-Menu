@@ -76,7 +76,7 @@ const modules = () => {
         </div>
 
         <div className="step1">
-          <h2>How can you use Sajha Menu</h2>
+          <h1>How can you use Sajha Menu</h1>
         </div>
         <div className="frame12">
           <div className="right-Side-Content">
@@ -98,6 +98,8 @@ const modules = () => {
           </div>
           <div className="left-Side-image">
             <img src={Rectangle2} alt="rectangle" className="menu-image-2" />
+            <img src={Rectangle2} alt="rectangle" className="menu-image-3" />
+            <img src={Rectangle2} alt="rectangle" className="menu-image-4" />
           </div>
         </div>
 

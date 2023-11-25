@@ -3,3 +3,9 @@
   border-radius: 0;
   padding: 1.5rem 0.5rem;
 }
+@media screen and(max-width:425px) {
+  .Accordion .Header {
+    font-size: 10px;
+    background-color: RED;
+  }
+}

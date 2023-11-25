@@ -10,7 +10,7 @@ const BsAccordian = () => {
           Can Place order without waiter app ?
         </Accordion.Header>
         <Accordion.Body>
-          This is due thkfjals lkdsfnls lkfnsdf lkfnls dlkfnalsd{" "}
+          This is due thkfjals lkdsfnls lkfnsdf lkfnls dlkfnalsd
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2" className="item">

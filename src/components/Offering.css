@@ -22,8 +22,8 @@
   list-style: none;
 }
 .selected_Item {
-  background-image: linear-gradient(#ffba53, #fc8211);
-  border-radius: 7px;
+  /* background-image: linear-gradient(#ffba53, #fc8211);
+  border-radius: 7px; */
 }
 
 .offer {
@@ -53,14 +53,15 @@
   height: auto;
 }
 .right-Side-Content {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 5rem 5rem;
-  gap: 3rem;
-  padding: 10px 20px; */
   padding: 5rem 5rem;
+}
+.offer ul li:hover {
+  background-image: linear-gradient(#ffba53, #fc8211);
+  border-radius: 7px;
+  cursor: pointer;
+}
+.content-offering {
+  display: none;
 }
 .right-Side-Content p {
   text-align: justify;

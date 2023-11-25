@@ -62,7 +62,7 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <Link to="/ABOUT" className="nav-links" onClick={closeMobileMenu}>
-              Company <img src={frame} alt="frame" />
+              Company <img src={frame} alt="frame" className="down-arrow-nav" />
             </Link>
           </li>
           <li>
@@ -82,45 +82,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-// import React, { useState } from "react";
-// import "./navbar.css"; // Import your custom CSS file for styling
-// import logo from "../../assests/image 2.png";
-// const Navbar = () => {
-//   const [showLinks, setShowLinks] = useState(false);
-
-//   const handleToggle = () => {
-//     setShowLinks(!showLinks);
-//   };
-
-//   return (
-//     <nav className="navbar">
-//       <div className="navbar-container">
-//         <div className="logo-container">
-//           <img src={logo} alt="logo-image" />
-//         </div>
-//         <div className={showLinks ? "nav-links-mobile" : "nav-links"}>
-//           <ul>
-//             <li>Home</li>
-//             <li>Home</li>
-//             <li>Home</li>
-//             <li>Home</li>
-//           </ul>
-//         </div>
-//         <div className="button-navbar">
-//           <button1 className="button-space">Schedule a Demo</button1>
-//         </div>
-
-//         <button className="mobile-menu-icon" onClick={handleToggle}>
-//           {showLinks ? (
-//             <i className="fa-solid fa-bars"></i>
-//           ) : (
-//             <i className="fas fa-bars"></i>
-//           )}
-//         </button>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;

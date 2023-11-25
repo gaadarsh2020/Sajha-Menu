@@ -1,7 +1,6 @@
 .clear-things {
   max-width: 100%;
   height: auto;
-  /* background-color: aqua; */
 }
 .clear-things-main {
   width: 90%;
@@ -13,6 +12,29 @@
 }
 .clear-things-right {
   flex-basis: 50%;
+  position: relative;
+}
+.frame9 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 90px;
+  animation: prakash 5s infinite;
+  animation-direction: alternate;
+}
+@keyframes prakash {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  50% {
+    top: -50px;
+    left: 0px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
 }
 
 .clear-things-right h1 {

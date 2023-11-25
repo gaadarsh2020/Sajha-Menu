@@ -12,13 +12,13 @@ export const MenuItems = [
   {
     image: group2,
     title: "POS & Waiter App",
-    path: "/consulting",
+    path: "/POS",
     cName: "dropdown-link",
   },
   {
     image: group3,
     title: "Accounting Software",
-    path: "/design",
+    path: "/dropdown",
     cName: "dropdown-link",
   },
 ];
